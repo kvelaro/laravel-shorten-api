@@ -20,6 +20,7 @@ class Url extends Migration
             $table->string('hash');
             $table->rememberToken();
             $table->timestamps();
+			$table->index(['hash']);
         });
     }
 
